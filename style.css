@@ -1,0 +1,1015 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+}
+body{
+                background: black;
+
+}
+
+header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        padding: 5px;
+        background: black;
+        box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.6);
+}
+header img{
+        display: none;
+}
+nav ul{
+        display: inline-flex;
+        padding: 10px 15px;
+        
+}
+nav ul li{
+        list-style: none;
+        margin: 10px 15px;
+}
+nav ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+}
+nav ul li a:hover{
+       color: lime; 
+}
+header .head{
+        font-size: 30px;
+        font-weight: 600%;
+        color: white;
+        color: lime;
+        font-family: Poppins;
+}
+
+.head b{
+        color: red;
+}
+.Actor{
+        margin-top: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+                transition: 3s ease-in-out;
+
+        
+}
+.Actor .img img{
+        width: 430px;
+        height: 450px;
+        object-fit: cover;
+                transition: 3s ease-in;
+
+                border-radius: 50px;
+
+}
+.Actor .img{
+        width: 430px;
+        height: 450px;
+        border-radius: 50px;
+        box-shadow: 7px 7px 10px lawngreen,-7px -7px 7px lawngreen;
+        transition: 3s ease-in-out;
+}
+.Actor .intro{
+}
+.Actor .intro .name{
+        font-size: 41px;
+        font-weight: 600;
+        font-family: Poppins;
+                        color: white;
+                                text-align: center;
+
+
+        margin-top: 5px;
+}
+.Actor .intro .hello{
+        color: black;
+        font-weight: 600;
+        font-family: Poppins;
+        font-size: 20px;
+                        color: white;
+        text-align: center;
+
+                margin-top: 5px;
+
+}
+.Actor .work{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.Actor .actor{
+        font-size: 30px;
+        font-family: Poppins;
+        font-weight: 400;
+        position: relative;
+                        color: white;
+        text-align: center;
+
+                margin-top: 5px;
+
+}
+.Actor .actor::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -9px;
+        width: 3px;
+        height: 60px;
+        background: lime;
+}
+.Actor .actors{
+        font-size: 30px;
+        font-family: Poppins;
+        font-weight: 400;
+        position: relative;
+                margin-top: 5px;
+                color: white;
+
+}
+.by{
+        margin-top: 70px;
+        
+}
+.to{
+                color: lime;
+
+  font-size: 25px;
+                text-align: center;
+                font-weight: 600;
+                font-family: Borel;
+
+}
+.sign{
+        width: 130px;
+        height: 110px;
+   margin-left: 40px;
+        margin-top: 10px;
+        object-fit: cover;
+        border: none;
+}
+.by span{
+        color: white;
+        display: inline-block;
+        position: relative;
+        top: -30px;
+        left: -10px;
+        font-size: 25px;
+        margin-left: 10px;
+        font-family: Poppins;
+                color: navajowhite;
+                        animation: ani 3s ease-in-out forwards;
+        opacity: 0;
+
+
+}
+.by span::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 290px;
+        height: 5px;
+        background: lime;
+        animation: ani 5s ease-in-out infinite;
+        opacity: 0;
+        border-radius: 10px;
+}
+@keyframes ani{
+        0%{
+                width: 0;
+                opacity: 0;
+        }
+        100%{
+                opacity: 1
+        }
+}
+.Us{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-top: 50px;
+}
+.Us .container{
+        width: 430px;
+        height: 450px;
+        background: rgba(255, 255, 255, 0.6);
+        position: relative;
+        transition: 0.5s;
+                box-shadow: 5px 5px 7px lime, -5px -5px 7px lime ;
+                   margin-left: 30px;
+                        margin-top: 0px;
+
+}
+.Us .container:hover{
+        height: 450px;
+}
+.Us .container .img{
+        background: 250px;
+        width: 300px;
+        height: 300px;
+        background: red;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 58px;
+
+        justify-content: center;
+        
+}
+.Us .container:hover .img{
+     top: -110px;
+     transform: scale(0.8);
+}
+.me{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 210px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Poppins;
+}
+
+.Us .container .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.Us .text{
+        position: absolute;
+        top: 330px;
+        left: 0;
+        height: 38px;
+        overflow: hidden;
+        transition: 0.5s;
+                padding: 3px 2px;
+
+        
+}
+.Us .container:hover .text{
+        height: 300px;
+        top: 155px;
+}
+.text .name{
+        font-size: 20px;
+        font-family: Poppins;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        color: red;
+}
+.text .born b{
+        font-size: 17px;
+        
+        font-weight: 600;
+        font-family: Poppins;
+}
+.text .born{
+        font-size: 15px;
+        font-family: Poppins;
+        font-weight: 400;
+        
+}
+.text .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+}
+.text .logo a{
+  width: 44px;
+  height: 44px;
+  background: blue;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+}
+.text .let a{
+        border: 2px solid limegreen;
+        background: lime;
+        margin-top: 10px;
+        display: inline-block;
+        padding: 15px 25px;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        
+}
+.text .let a span{
+        background: rgba(0, 0, 0);
+        width: 0;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: right;
+        
+}
+.text .let a:hover span{
+        width: 100%;
+                transform-origin: right;
+
+}       
+
+.text .let a:hover{
+        color: white;
+}
+.text .let{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+}
+.Box{
+        width: 350px;
+        background: rgba(255, 255, 255, 0.6);
+        height: 430px;
+        margin-top: 30px;
+   padding-left: 40px;
+}
+.Service{
+       margin-top: 150px;
+}
+.Service .My{
+        color: white;
+        margin-top: 250px;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: Poppins;
+        text-align: center;
+        
+}
+.Service .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+       
+}
+.Service .container .box{
+        width: 300px;
+        height: 350px;
+        background: rgba(255, 255, 255, 0.6);
+        margin-top: 70px;
+        margin-left: 5px;
+        
+
+}
+.Service .container .logos{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+}
+.Service .container .box .logo{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background: darkred;
+        position: relative;
+        /*left: 95px;
+         top: 10px;*/
+}
+.Service .container .logo i{
+        font-size: 55px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+.Service .container .box .text{
+        margin-top: 15px;
+        font-family: Quicksand;
+      padding-left: 10px;
+}
+.Service .container .box .tit{
+        font-size: 20px;
+        margin-top: 8px;
+        font-family: Poppins;
+        text-align: center;
+        
+        
+}
+.Service .container .box .a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+        
+        
+        
+}
+.Service .container .box .a a{
+        padding: 5px 10px;
+        border: 3px solid limegreen;
+        display: inline-block;
+        margin-top: 5px;
+        text-decoration: none;
+        position: relative;
+}
+#contact{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Poppins;
+  
+}
+.last{
+  height: 30vh;
+}
+form{
+  width: 700px;
+  background: burlywood;
+  padding: 20px 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.p{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.p input{
+  width: 100%;
+  height: 37px;
+  border: 2px solid lightgray;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 40px;
+  margin-top: 5px;
+}
+input label{
+font-size: 25px;
+}
+textarea{
+  padding-left: 30px;
+  font-size: 20px;
+}
+form .d{
+  margin-top: 10px;
+}
+.d button{
+  background: red;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5),-3px -3px 3px rgba(0, 0, 0, 0.5)
+}
+footer .fb{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgb(66,103,178);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  font-size: 40px;
+  color: white;
+}
+
+.fb:hover{
+  transform: scale(1.1);
+}
+
+footer{
+  margin-top: 70px;
+width: 100%;
+height: 130px;
+background: pink;
+  position: relative;
+    top: 200px;
+  left: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+footer .fbs{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: deeppink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+    font-size: 40px;
+    color: white;
+}
+
+.fbs:hover{
+  transform: scale(1.1);
+}
+footer .fbst{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: deepskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    transition: 0.5s;
+      font-size: 40px;
+      color: white;
+
+}
+footer .fbst:hover{
+  transform: scale(1.1);
+}
+
+footer .fbss{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+    background: deepskyblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.fbss{
+  font-size: 40px;
+  color: white;
+}
+footer .fbss:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 600px){
+        body{
+                background: black;
+        }
+        nav{
+                                position: absolute;
+                                top: 20px;
+                                right: 10px;
+                                opacity: 0.9; 
+                                display: none;
+
+        }
+        
+        nav ul{
+                top: 0;
+                right: 0;
+        display: block;
+                                                background: limegreen;
+                                                width: 160px;
+                                                height: 180px;
+                                                padding-right: 5px;
+
+        
+}
+nav ul li{
+        list-style: none;
+        margin-top: 3px;
+}
+nav ul li a{
+        text-decoration: none;
+        color: white;
+
+        cursor: pointer;
+}
+nav ul li a:hover{
+       color: lime; 
+}
+header .head{
+        font-size: 30px;
+        font-weight: 600%;
+        color: white;
+        color: lime;
+        font-family: Poppins;
+}
+
+.head b{
+        color: red;
+}
+.menu{
+        position: relative;
+        background: lightgray;
+        border-radius: 10px;
+}
+.menu img{
+        display: block;
+        width: 60px;
+        height: 60px;
+}
+.menu:hover nav{
+        display: block;
+}
+.Actor{
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+                transition: 0.3s ease-in-out;
+
+        
+}
+.Actor .img img{
+        width: 200px;
+        height: 200px;
+
+        object-fit: cover;
+                transition: 3s ease-in;
+
+                border-radius: 50px;
+
+}
+.Actor .img{
+        width: 200px;
+        height: 200px;
+        transition: 3s ease-in-out;
+                box-shadow: 3px 3px 10px lawngreen,-3px -3px 7px lawngreen;
+
+}
+.Actor .intro{
+}
+.Actor .intro .name{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Poppins;
+                        color: white;
+                                text-align: center;
+
+
+        margin-top: 5px;
+}
+.Actor .intro .hello{
+        color: black;
+        font-weight: 600;
+        font-family: Poppins;
+        font-size: 15px;
+                        color: white;
+        text-align: center;
+
+                margin-top: 5px;
+
+}
+.Actor .work{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.Actor .actor{
+        font-size: 15px;
+        font-family: Poppins;
+        font-weight: 400;
+        position: relative;
+                        color: white;
+        text-align: center;
+
+                margin-top: 5px;
+
+}
+.Actor .actor::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -9px;
+        width: 3px;
+        height: 30px;
+        background: lime;
+}
+.Actor .actors{
+        font-size: 15px;
+        font-family: Poppins;
+        font-weight: 400;
+        position: relative;
+                margin-top: 5px;
+                color: white;
+
+}
+.by{
+        margin-top: 50px;
+        
+}
+.to{
+                color: lime;
+
+  font-size: 13px;
+                text-align: center;
+                font-weight: 600;
+                font-family: Borel;
+
+}
+.sign{
+        width: 60px;
+        height: 60px;
+   margin-left: 20px;
+        margin-top: 5px;
+        object-fit: cover;
+        border: none;
+}
+.by span{
+        color: white;
+        display: inline-block;
+        position: relative;
+        top: -45px;
+        left: 30px;
+        font-size: 15px;
+                margin-left: 52px;
+
+        font-family: Poppins;
+                color: navajowhite;
+                        animation: ani 3s ease-in-out forwards;
+        opacity: 0;
+
+
+}
+.by span::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        bottom: -5px;
+        width: 160px;
+        height: 5px;
+        background: lime;
+        animation: ani 5s ease-in-out infinite;
+        opacity: 0;
+        border-radius: 10px;
+}
+.Us{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-top: 50px;
+}
+.Us .container{
+        width: 400px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.6);
+        position: relative;
+        transition: 0.5s;
+                box-shadow: 5px 5px 7px lime, -5px -5px 7px lime ;
+                   margin-left: 30px;
+                        margin-top: 50px;
+                        margin-bottom: 79px;
+
+}
+.Us .container:hover{
+        height: 500px;
+}
+.Us .container .img{
+        width: 300px;
+        height: 300px;
+        background: red;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 14px;
+        left: 28px;
+
+        justify-content: center;
+        
+}
+.Us .container:hover .img{
+     top: -80px;
+     transform: scale(0.î);
+}
+.me{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 210px;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: Poppins;
+}
+
+.Us .container .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.Us .text{
+        position: absolute;
+        top: 330px;
+        left: 0;
+        height: 35px;
+        overflow: hidden;
+        transition: 0.5s;
+                padding: 3px 2px;
+
+        
+}
+.Us .container:hover .text{
+        height: 320px;
+        top: 190px;
+}
+.text .name{
+        font-size: 20px;
+        font-family: Poppins;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        color: red;
+}
+.text .born b{
+        font-size: 13px;
+        
+        font-weight: 600;
+        font-family: Poppins;
+}
+.text .born{
+        font-size: 13px;
+        font-family: Poppins;
+        font-weight: 400;
+        
+}
+.text .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+}
+.text .logo a{
+  width: 44px;
+  height: 44px;
+  background: blue;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+}
+.text .let a{
+        border: 2px solid limegreen;
+        background: lime;
+        margin-top: 10px;
+        display: inline-block;
+        padding: 15px 25px;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        
+}
+.text .let a span{
+        background: rgba(0, 0, 0);
+        width: 0;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: right;
+        
+}
+.text .let a:hover span{
+        width: 100%;
+                transform-origin: right;
+
+}       
+
+.text .let a:hover{
+        color: white;
+}
+.text .let{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+}
+.Service .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+       
+}
+.Service .container .box{
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.6);
+        margin-top: 70px;
+        margin-left: 5px;
+        
+
+}
+.Service .container .box .logo{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background: darkred;
+     
+     
+       
+}
+.Service .container .logo i{
+        font-size: 55px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+.Service .container .box .text{
+        margin-top: 15px;
+        font-family: Quicksand;
+      padding-left: 10px;
+}
+.Service .container .box .tit{
+        font-size: 20px;
+        margin-top: 8px;
+        font-family: Poppins;
+        text-align: center;
+        
+        
+}
+.Service .container .box .a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+        
+        
+}
+.Service .container .box .a a{
+        padding: 5px 10px;
+        border: 3px solid limegreen;
+        display: inline-block;
+        margin-top: 5px;
+        text-decoration: none;
+}
+form {
+        width: 100%;
+        background: burlywood;
+        padding: 20px 40px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+}
+footer {
+        margin-top: 470px;
+        width: 100%;
+        height: 130px;
+        background: pink;
+        position: relative;
+        top: 200px;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.a a span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: limegreen;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        transition: .5s ease-in-out;
+}
+.a a{
+        z-index: 1;
+}
+.a a:hover span{
+        width: 100%;
+}
+}
